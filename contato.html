@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #1a8a4c;
+  color: #ffffff;
+}
+
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1a8a4c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  padding: 20px;
+}
+
+/* Style the footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #333333;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links ol {
+  list-style: none;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-links a {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>AutoEscola MATRIX </h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Sobre</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="contato.html" class="active">Contato</a>
+</div>
+
+<div class="content">
+<h2>Entre em contato conosco</h2>
+<p>->Para acessar informações entre em contato via Whatsapp</p>
+    <a href="https://api.whatsapp.com/send?phone=5541984107452&text=Texto%20aqui" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png"/>
+    </a>  
+<p>Se você tem alguma dúvida, sugestão ou reclamação, por favor preencha o formulário abaixo e nós responderemos o mais breve possível.</p>
+
+<form action="/action_page.php">
+<label for="fname">Nome:</label><br>
+<input type="text" id="fname" name="fname" value=""><br>
+<label for="lname">Sobrenome:</label><br>
+<input type="text" id="lname" name="lname" value=""><br>
+<label for="email">E-mail:</label><br>
+<input type="email" id="email" name="email" value=""><br>
+<label for="message">Mensagem:</label><br>
+<textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+<input type="submit" value="Enviar">
+</form>
+
+<p>Você também pode nos encontrar nas redes sociais:</p>
+<div class="social-links">
+  <ol>
+    <li><a href="https://www.facebook.com/people/AutoEscola-Matrix/100092233931520/" target="_blank"><img src="Facebook-logo-3d-i-social-media.png" alt="Facebook"></a></li>
+    <li><a href="https://www.instagram.com/autoescola.matrix/" target="_blank"><img src="instagram-logo-i-social-media.png" alt="Instagram"></a></li>
+    <li><a href="https://linktr.ee/autoescolamatrixcolombo" target="_blank"><img src="linktr-logo-i-dev-media.jpg"><a</li>
+</div>
+
+<div class="footer">
+<p>© 2023 AutoEscola MATRIX. Todos os direitos reservados.</p>
+</div>
+
+</body>
+</html>
